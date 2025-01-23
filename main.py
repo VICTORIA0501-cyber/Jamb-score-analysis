@@ -31,6 +31,8 @@ df.shape
 
 df.dropna(inplace=True)
 
+df_jamb = df[['JAMB_Score']]
+grp_lbl = df['Parent_Education_Level']
 
 plt.figure(figsize=(10,8))
 sns.histplot(data = df, x='JAMB_Score', hue='Parent_Education_Level') 
